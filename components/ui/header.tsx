@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Info, MessageCircleMore, Search } from "lucide-react";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 import { Separator } from "@/components/ui/separator";
 import { SidebarTrigger } from "@/components/ui/sidebar";
@@ -37,6 +38,8 @@ import { useSharkData } from "@/context/shark-data-context";
 import { ToggleGroup, ToggleGroupItem } from "./toggle-group";
 
 export function Header() {
+  const router = useRouter();
+
   const { selectedShark, handleSelectShark } = useSharkData();
 
   const [searchIsOpen, setSearchIsOpen] = useState(false);
@@ -103,6 +106,8 @@ export function Header() {
                               className="flex items-center p-2 w-auto h-auto justify-start gap-4 cursor-pointer flex-col"
                               onClick={() => {
                                 form.setValue("sharkName", item.name);
+                                router.push("/");
+
                                 handleSelectShark(item);
                                 setSearchIsOpen(false);
                               }}
