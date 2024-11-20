@@ -115,7 +115,7 @@ export default function Authors() {
             <div className="w-full flex items-start justify-center flex-col gap-2">
               <Image
                 src="/png/cibelly.png"
-                alt="Cibelly Z. Silva"
+                alt="Cibely Moreira Silva"
                 className="rounded-2xl"
                 width={400}
                 height={400}
@@ -125,7 +125,7 @@ export default function Authors() {
               />
 
               <div className="flex items-start justify-center flex-col gap-2">
-                <h2 className="text-xs font-semibold">Cibelly Zanin Silva</h2>
+                <h2 className="text-xs font-semibold">Cibely Moreira Silva</h2>
 
                 <div className="flex items-center justify-start gap-2">
                   <a
