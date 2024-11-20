@@ -1,0 +1,32 @@
+{
+  "scope": "/",
+  "start_url": "/",
+  "display": "fullscreen",
+  "orientation": "natural",
+  "theme_color": "#1051ab",
+  "background_color": "#efefed",
+  "display_override": ["window-controls-overlay"],
+  "short_name": "Shark App Radar",
+  "name": "Shark App Radar",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable",
+      "src": "/icon-192.png"
+    },
+    {
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any maskable",
+      "src": "/icon-256.png"
+    },
+    {
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable",
+      "src": "/icon-512.png"
+    }
+  ]
+}
